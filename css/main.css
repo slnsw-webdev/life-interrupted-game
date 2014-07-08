@@ -270,7 +270,7 @@ textarea {
 }
 
 #game-content-container {
-	width: 184px;
+	width: 18%;
 	min-height: 100% !important;
 	background-color: #fff;
 	text-align: center;
@@ -298,7 +298,7 @@ textarea {
 
 #menu-container-top {
 	width: 100%;
-	min-height: 511px;
+	min-height: 66%;
 	padding: 0;
 	margin-left: 0 auto;
 	margin-right: 0 auto;
@@ -309,7 +309,7 @@ textarea {
 
 #menu-container-bottom {
 	width: 100%;
-	min-height: 257px;
+	min-height: 34%;
 	text-align: center;
 	vertical-align: bottom;
 	float: left;
