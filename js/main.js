@@ -1,3 +1,23 @@
+// jquery time
+$( document ).ready(function() {
+	
+	// first hide the div's we don't initially need
+	$("#game-picker").hide();
+	$("#game-rules").hide();
+	$("#game-container").hide();
+	$("#content-container").hide();
+	
+    console.log( "ready!" );
+});
+
+
+// click buttons
+$(document).on('click', '#games-rules-btn', function() {
+	$("#game-rules").css("visibility", "visible");		
+}); 
+
+
+
 $(document).on('pageshow', '#index', function(){       
     $("#drag").draggable({
         start: handleDragStart,

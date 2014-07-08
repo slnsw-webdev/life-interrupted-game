@@ -13,84 +13,87 @@
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.0.min.js"></script>
         <script src="js/vendor/jquery-1.11.1.min.js"></script>
+        <script src="js/jquery-ui-1.10.4.min.js"></script>
+        
     </head>
     <body>
+    
+    	<div id="container">
         
-		  <div id="game-landing" class="game-landing">
-		  			<div id="game-landing-logo" class="game-landing-logo">
-		  				<img src="images/li-logo.png" id="landing-li-logo" />	
-		  			</div>
-		  			<div id="game-landing-title" class="game-landing-title">
-		  				WWI Challenge
-		  			</div>
-		  			<div id="game-landing-content" class="game-landing-content">
-		  			A New, Interesting and Instructive Game<br /> for Young and Old 
-		  			</div>
-		  			<div id="game-landing-menu" class="game-landing-menu">
-		  				<input type="button" id="game-landing-menu-rules" class="screen-btn" value="Rules" onclick="showRules();">	
-						<input type="button" id="game-landing-menu-games" class="screen-btn" value="Games" onclick="showGames();">	  
-		  			</div>
-		  </div>
+        	<div id="main" role="main">
+        	
+              <div class="container-center">
+        
+                  <div id="game-landing" class="game-landing">
+                        <div class="image-container"><img src="img/entry-splash.png" /></div>
+                        <div id="game-landing-title" class="game-landing-title">
+                            WWI Challenge
+                        </div>
+                        <div id="game-landing-content" class="game-landing-content">
+                            A New, Interesting and Instructive Game for Young and Old 
+                        </div>
+                        <div class="button-container">
+                            <input type="button" value="Rules" class="entry-btn" />
+                            <input type="button" value="Games" id="games-rules-btn" class="entry-btn" />
+                         </div>
+                  </div>
 
-		  <div id="game-picker" class="game-picker">
-		  		<div id="game-picker-header" class="header-title">
-					Games		  		
-		  		</div>
-		  		<div id="game-picker-container" class="game-picker-container">
-					<!-- content loaded via js function based on games[] js array -->
-		  		</div>
-		  		<div id="game-picker-menu" class="game-picker-menu">
-		  			<input type="button" id="game-picker-menu-home" class="menu-btn" value="Home" onclick="showHome();">	
-					<input type="button" id="game-picker-menu-rules" class="menu-btn" value="Rules" onclick="showRules();">	
-		  		</div>
-		  </div>
+                  <div id="game-picker" class="game-picker">
+                        <div id="game-picker-header" class="header-title">
+                            Games		  		
+                        </div>
+                        <div id="game-picker-container" class="game-picker-container">
+                            <!-- content loaded via js function based on games[] js array -->
+                        </div>
+                        <div id="game-picker-menu" class="game-picker-menu">
+                            <input type="button" id="game-picker-menu-home" class="menu-btn" value="Home" onClick="showHome();">	
+                            <input type="button" id="game-picker-menu-rules" class="menu-btn" value="Rules" onClick="showRules();">	
+                        </div>
+                  </div>
 		  
-		  <div id="game-rules" class="game-rules">
-		  			<div id="game-rules-title" class="game-rules-title">
-						Rules of the Game		  			
-		  			</div>
-		  			<div id="game-rules-content" class="game-rules-content">
-		  			
-		  			</div>
-		  			<div id="game-rules-menu" class="game-rules-menu">
-		  				<input type="button" id="game-rules-menu-rules" class="screen-btn" value="Home" onclick="showHome();">	
-						<input type="button" id="game-rules-menu-games" class="screen-btn" value="Games" onclick="showGames();">	  
-		  			</div>
-		  </div>
+                  <div id="game-rules" class="game-rules">
+                            <div id="game-rules-title" class="game-rules-title">
+                                Rules of the Game		  			
+                            </div>
+                            <div id="game-rules-content" class="game-rules-content">
+                            
+                            </div>
+                            <div id="game-rules-menu" class="game-rules-menu">
+                                <input type="button" id="game-rules-menu-rules" class="screen-btn" value="Home" onClick="showHome();">	
+                                <input type="button" id="game-rules-menu-games" class="screen-btn" value="Games" onClick="showGames();">	  
+                            </div>
+                  </div>
 		  
-		  <div id="game-container" class="game-container">
-			  <div id="menu-container">	
-			  		<div id="menu-container-top">
-						<input type="button" id="menu-home" class="menu-btn" value="Home" onclick="showHome();">	
-						<input type="button" id="menu-rules" class="menu-btn" value="Rules" onclick="showRules();">	
-						<input type="button" id="menu-games" class="menu-btn" value="Games" onclick="showGames();">	
-						<hr>
-						<input type="button" id="menu-reset" class="" value="Reset" onclick="resetGame();">		  		
-			  		</div>
-			  		<div id="menu-container-bottom">
-							<img src="images/li-logo.png" id="menu-li-logo" />		  		
-			  				<img src="images/sl-logo.png" id="menu-sl-logo" />
-			  		</div>       
-	        <div id="content-container">
-	 				
-	 			  <div id="cardQuestions"></div>
-				  <div id="cardAnswers"></div>
-				  <div id="gameMessage"></div>
-				 
-				</div>
-			</div>
+                    <div id="game-container" class="game-container">
+                        <div id="menu-container">	
+                              <div id="menu-container-top">
+                                  <input type="button" id="menu-home" class="menu-btn" value="Home" onClick="showHome();">	
+                                  <input type="button" id="menu-rules" class="menu-btn" value="Rules" onClick="showRules();">	
+                                  <input type="button" id="menu-games" class="menu-btn" value="Games" onClick="showGames();">	
+                                  <hr>
+                                  <input type="button" id="menu-reset" class="" value="Reset" onClick="resetGame();">		  		
+                              </div>
+                              <div id="menu-container-bottom">
+                                      <img src="img/li-logo.png" id="menu-li-logo" />		  		
+                                      <img src="img/sl-logo.png" id="menu-sl-logo" />
+                              </div> 
+                          </div>
+                      </div>    
+                  
+                    <div id="game-content-container">
+                            
+                          <div id="cardQuestions"></div>
+                          <div id="cardAnswers"></div>
+                          <div id="gameMessage"></div>
+                         
+                    </div>
+                </div>
+             </div>
+        
+        </div>
 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
     </body>
 </html>
