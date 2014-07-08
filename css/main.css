@@ -224,7 +224,6 @@ textarea {
 
 .card-replace {
 	background-image: url(../img/card-back.png);
-	z-index: 1;
 }
 
 #cardDivider {
@@ -253,6 +252,16 @@ textarea {
 	margin: 2px;
 	float: left;
 	font-size: 13px;		
+}
+
+#cardAnswers div.ui-draggable-dragging {
+  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+}
+
+.hovered {
+	background: #CCC;	
 }
 
 #game-content-container {

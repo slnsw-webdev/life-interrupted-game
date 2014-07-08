@@ -511,21 +511,15 @@ function gameStart(gameRef) {
 	  // on top of the slot, and prevent it being dragged
 	  // again
 	 
+	   ui.draggable.addClass( 'card-replace' );
+	   ui.draggable.draggable( 'disable' );
+	   $(this).droppable( 'disable' );
+	   ui.draggable.position( { of: $(this), my: 'left top', at: 'left top' } );
+	   ui.draggable.draggable( 'option', 'revert', false );
+	   ui.draggable.draggable( 'destroy' );
+	 
 	  if ( questionNumber == answerNumber ) {
-	    ui.draggable.addClass( 'card-replace' );
-	    ui.draggable.draggable( 'disable' );
-	    $(this).droppable( 'disable' );
-	    ui.draggable.position( { of: $(this), my: 'left top', at: 'left top' } );
-	    ui.draggable.draggable( 'option', 'revert', false );
 	    correctCards++;
-	  } 
-	  
-	   if ( questionNumber != answerNumber ) {
-	    ui.draggable.addClass( 'card-replace' );
-	    ui.draggable.draggable( 'disable' );
-	    $(this).droppable( 'disable' );
-	    ui.draggable.position( { of: $(this), my: 'left top', at: 'left top' } );
-	    ui.draggable.draggable( 'option', 'revert', false );
 	  } 
 	  
 	  console.log('correct cards are ... ' + correctCards + ' after ' + movedCards + ' moved cards' );

@@ -43,10 +43,7 @@ $(document).on('click', '#game-picker-btn', function() {
 }); 
 
 $(document).on('click', '#menu-home', function() {
-	$('#content-container').show();	
-  	$('#game-landing').css("visibility", "visible");
-  	$("#game-picker").css("visibility", "hidden");
-  	$("#game-rules").css("visibility", "hidden");
+	location.reload();
 });
 
 $(document).on('click', '#menu-rules', function() {
