@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Life Interuppted Game</title>
+        <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,19 +13,72 @@
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.0.min.js"></script>
         <script src="js/vendor/jquery-1.11.1.min.js"></script>
-		<script src="js/jquery-ui-1.10.4.js"></script>
-        <script src="js/jquery.colorbox.js"></script>
-        
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
         
-        
-        
-		
-        
+		  <div id="game-landing" class="game-landing">
+		  			<div id="game-landing-logo" class="game-landing-logo">
+		  				<img src="images/li-logo.png" id="landing-li-logo" />	
+		  			</div>
+		  			<div id="game-landing-title" class="game-landing-title">
+		  				WWI Challenge
+		  			</div>
+		  			<div id="game-landing-content" class="game-landing-content">
+		  			A New, Interesting and Instructive Game<br /> for Young and Old 
+		  			</div>
+		  			<div id="game-landing-menu" class="game-landing-menu">
+		  				<input type="button" id="game-landing-menu-rules" class="screen-btn" value="Rules" onclick="showRules();">	
+						<input type="button" id="game-landing-menu-games" class="screen-btn" value="Games" onclick="showGames();">	  
+		  			</div>
+		  </div>
+
+		  <div id="game-picker" class="game-picker">
+		  		<div id="game-picker-header" class="header-title">
+					Games		  		
+		  		</div>
+		  		<div id="game-picker-container" class="game-picker-container">
+					<!-- content loaded via js function based on games[] js array -->
+		  		</div>
+		  		<div id="game-picker-menu" class="game-picker-menu">
+		  			<input type="button" id="game-picker-menu-home" class="menu-btn" value="Home" onclick="showHome();">	
+					<input type="button" id="game-picker-menu-rules" class="menu-btn" value="Rules" onclick="showRules();">	
+		  		</div>
+		  </div>
+		  
+		  <div id="game-rules" class="game-rules">
+		  			<div id="game-rules-title" class="game-rules-title">
+						Rules of the Game		  			
+		  			</div>
+		  			<div id="game-rules-content" class="game-rules-content">
+		  			
+		  			</div>
+		  			<div id="game-rules-menu" class="game-rules-menu">
+		  				<input type="button" id="game-rules-menu-rules" class="screen-btn" value="Home" onclick="showHome();">	
+						<input type="button" id="game-rules-menu-games" class="screen-btn" value="Games" onclick="showGames();">	  
+		  			</div>
+		  </div>
+		  
+		  <div id="game-container" class="game-container">
+			  <div id="menu-container">	
+			  		<div id="menu-container-top">
+						<input type="button" id="menu-home" class="menu-btn" value="Home" onclick="showHome();">	
+						<input type="button" id="menu-rules" class="menu-btn" value="Rules" onclick="showRules();">	
+						<input type="button" id="menu-games" class="menu-btn" value="Games" onclick="showGames();">	
+						<hr>
+						<input type="button" id="menu-reset" class="" value="Reset" onclick="resetGame();">		  		
+			  		</div>
+			  		<div id="menu-container-bottom">
+							<img src="images/li-logo.png" id="menu-li-logo" />		  		
+			  				<img src="images/sl-logo.png" id="menu-sl-logo" />
+			  		</div>       
+	        <div id="content-container">
+	 				
+	 			  <div id="cardQuestions"></div>
+				  <div id="cardAnswers"></div>
+				  <div id="gameMessage"></div>
+				 
+				</div>
+			</div>
 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
