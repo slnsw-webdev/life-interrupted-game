@@ -220,7 +220,7 @@ textarea {
 	height: 372px;
 	vertical-align: middle;
 	margin-left: 3px;	
-	margin-top: 6px;
+	padding-top: 6px;
 }
 
 .card-replace {
