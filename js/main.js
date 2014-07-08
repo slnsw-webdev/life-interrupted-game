@@ -11,6 +11,11 @@ $( document ).on( "idle.idleTimer", function(){
 	$(location).attr('href', 'index.html');
 });
 
+var handleMove = function (e) {
+    if($(e.target).closest('.scrollable').length == 0) { e.preventDefault(); }
+}
+document.addEventListener('touchmove', handleMove, true);
+
 
 
 $( document ).ready(function() {
@@ -68,9 +73,7 @@ $(document).on('click', '#close-btn', function() {
 $(document).on('click', '.game-btn', function() {
 	// get id of button then load game
 	game_id = $(this).attr("id");
-	
 	console.log('Loading game ... ' + game_id);
-	
 	gameStart(game_id);
 });
 

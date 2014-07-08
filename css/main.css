@@ -209,8 +209,8 @@ textarea {
 }
 
 #card-content-container {
-	width: 840px;
-	min-height: 768px;
+	width: 82%;
+	min-height: 100%;
 	background-color: #000;
 	text-align: center;	
 	vertical-align: center;	
@@ -218,14 +218,12 @@ textarea {
 }
 
 #cardQuestions {
-	height: 374px;
-	vertical-align: middle;
-	margin-left: 3px;
-	margin-top: 2px;	
+	height: 48%;
+	vertical-align: middle;	
 }
 
 #cardAnswers {
-	height: 357px;
+	height: 48%;
 	vertical-align: middle;
 	margin-left: 3px;	
 }
@@ -235,8 +233,7 @@ textarea {
 }
 
 #cardDivider {
-	height: 38px;
-	margin-top: -6px;
+	height: 4%;
 	vertical-align: middle;
 }
 
