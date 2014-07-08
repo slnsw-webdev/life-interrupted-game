@@ -1,6 +1,6 @@
-var games = [
-	[ // game 1
-		["How does England try to guard against the Zeps?",
+var games = [];
+
+games[0] = [["How does England try to guard against the Zeps?",
 		"What is the German medal for bravery?", 
 		"What is the pay of an English soldier compared with that of a Colonial?",
 		"What was the size of the British Army just before the War?", 
@@ -12,8 +12,7 @@ var games = [
 		"What great man warned Britain against Germany, and urged her to prepare for war?",
 		"What was the famous British Retreat at the beginning of the war?", 
 		"What was the reason for, and the date of England's Declaration of War against Germany"]
-			
-		
+
 		["By means of patrols on the coast, anti-aircraft guns, and searchlights",
 		"The Iron Cross",
 		"1/- a day to 5/-",
@@ -25,11 +24,10 @@ var games = [
 		"On clear, dark nights they drop bombs from Zeppelins",
 		"Lord Roberts",
 		"The retreat from Mons",
-		"Germany's unlawful invasion of Belgium. August 4th, 1914"]
-	]
+		"Germany's unlawful invasion of Belgium. August 4th, 1914"]];
 	
-	[ // game 2
-		["Have the Germans a large army in time of peace?",
+	 
+games[1] = [["Have the Germans a large army in time of peace?",
 		"How is an officer's rank shown on his uniform?",
 		"How has New Zealand helped the Navy?",
 		"Why are the monitors the most useful warships off the coast of Belgium?",
@@ -43,22 +41,20 @@ var games = [
 		"What two great countries began the Great European War?"]
 			
 		
-		["Yes, every man has to be trained as a soldier."
-		"By means of stripes, stars and crowns shown on their sleeves."
-		"By giving the battle cruiser H.M.S. New Zealand."
-		"Because being flat-bottomed they can get close to land and bombard the German trenches."
-		"In order to protect the Suez Canal."
-		"A shell, which when it bursts scatters bullets for yards around."
-		"In massed formation, that is, one line packed closely on another." 
-		"It is a bronze medal with the words For Valour  inscribed, given by the Sovereign for a deed of great bravery." 
-		"By a wonderfully organised system of spies working all over the British Empire." 
-		"Belgium was a neutral country, and her neutrality was guaranteed by Germany and other Great Powers." 
-		"To fight on land and help warships to open the way to Constantinople." 
-		"Austria made war on Serbia."]
-	]
+		["Yes, every man has to be trained as a soldier.",
+		"By means of stripes, stars and crowns shown on their sleeves.",
+		"By giving the battle cruiser H.M.S. New Zealand.",
+		"Because being flat-bottomed they can get close to land and bombard the German trenches.",
+		"In order to protect the Suez Canal.",
+		"A shell, which when it bursts scatters bullets for yards around.",
+		"In massed formation, that is, one line packed closely on another.", 
+		"It is a bronze medal with the words For Valour  inscribed, given by the Sovereign for a deed of great bravery.", 
+		"By a wonderfully organised system of spies working all over the British Empire.",
+		"Belgium was a neutral country, and her neutrality was guaranteed by Germany and other Great Powers.", 
+		"To fight on land and help warships to open the way to Constantinople.", 
+		"Austria made war on Serbia."]];
 	
-	[ // game 3
-		["Who is Lord Kitchener, and what was his work?",
+games[2]= [["Who is Lord Kitchener, and what was his work?",
 		"What is Krupps?",
 		"What is a sniper?",
 		"What was the landing on the Dardanelles, and how long did the troops stay there?", 
@@ -83,11 +79,9 @@ var games = [
 		"First by voluntary enlistments and then by conscription",
 		"The Provinces of Alsace and Lorraine, lost in the war of 1870",
 		"Yes. By nursing, making munitions, and doings men's work at home",
-		"Airships, aeroplanes, submarines, poisonous gas and liquid fire."]
-	]
+		"Airships, aeroplanes, submarines, poisonous gas and liquid fire."]];
 	
-	[ // game 4
-		["How are orders given on the battle field?",
+games[3] = [["How are orders given on the battle field?",
 		"Who was the first New Zealand to gain a V.C.?",
 		"Name some possessions which Australia and New Zealand have taken from Germany?",
 		"What is shrapnel?",
@@ -112,11 +106,9 @@ var games = [
 		"Kitchens a few miles behind the firing line, where troops returning to the trenches can get hot soup",
 		"Yes, every man has to be trained as a soldier",
 		"Steel vessels filled with explosives either floating or anchored in the sea, to blow up ships",
-		"They are court martialled and shot."]
-	]
-
-	[ // game 5
-		["What is the fate of spies when caught?",
+		"They are court martialled and shot."]];
+	
+games[4] = [["What is the fate of spies when caught?",
 		"Did the Germans expect Belgium to fight?",
 		"Where did the Belgian refugees go for safety?",
 		"How was the name ANZAC made up?", 
@@ -141,11 +133,9 @@ var games = [
 		"H.M.S. Sydney destroyed the German warship Emden of the Cocos Island",
 		"June 5, 1916. Drowned on the H.M.S. Hampshire",
 		"Usually in hot climates: otherwise the men live in billets and huts",
-		"All the officers below the rank of Second Lieutenant"]
-	]	
-
-	[ // game 6
-		["What is the Triple Entente?",
+		"All the officers below the rank of Second Lieutenant"]];
+	
+games[5] = [["What is the Triple Entente?",
 		"How long does it take the Germans to build Zeppelins?",
 		"How did the Germans treat the Belgians?",
 		"Who are the Admirals in charge of the British fleet?", 
@@ -170,11 +160,9 @@ var games = [
 		"About 9000 men",
 		"Sandbags heaped along the front",
 		"The Boers in South Africa, after only 13 years under British Rule, have fought with us",
-		"In massed formation, that is, one line packed closely on another"]
-	]	
+		"In massed formation, that is, one line packed closely on another"]];
 	
-	[ // game 7
-		["What are Patrols?",
+games[6] = [["What are Patrols?",
 		"How long does it take to build a battleship?",
 		"What is Britain's Great Protector?",
 		"Who is the Kaiser?",
@@ -199,11 +187,9 @@ var games = [
 		"By means of patrols on the coast, anti-aircraft guns, and searchlights",
 		"Military and commercial greed",
 		"By special ships called mine-sweepers",
-		"In battles of Heligoland, Dogger Bank, and Jutland"]
-	]	
+		"In battles of Heligoland, Dogger Bank, and Jutland"]];
 	
-	[ // game 8
-		["What two great countries began the Great European War?",
+games[7] = [["What two great countries began the Great European War?",
 		"How did France become involved in the War?",
 		"What changes are made in uniform on going into action?", 
 		"What is a very common injury to soldiers in the trenches?",
@@ -228,11 +214,9 @@ var games = [
 		"A soldier hidden from view, whose work it is  to pick off individual soldiers of the enemy",
 		"By freely sending armies to help her",
 		"In war of 1870, when the Germans besieged Paris",
-		"From the initial letters of the Australian New Zealand Army Corps"]
-	]	
+		"From the initial letters of the Australian New Zealand Army Corps"]];
 	
-	[ // game 9
-		["Why was it thought necessary to send Armies to Gallipoli?",
+games[8] = [["Why was it thought necessary to send Armies to Gallipoli?",
 		"What are prize-ships?",
 		"Are women taking an active part in the war?", 
 		"What is the special feature of this war?", 
@@ -257,11 +241,9 @@ var games = [
 		"Preferably to one side, so that the whole lines can be fired on sideways",
 		"She was attacked by Germany",
 		"To guard the other men while sleeping or resting",
-		"Bully beef and biscuits"]
-	]	
+		"Bully beef and biscuits"]];
 	
-	[ // game 10
-		["What is a Trench Periscope?",
+games[9] = [["What is a Trench Periscope?",
 		"Why was it necessary to withdraw the troops from Gallipoli?",
 		"Why is the military band taken with a regiment?", 
 		"How did  England first help the Allies?",
@@ -286,11 +268,9 @@ var games = [
 		"If bombs are thrown too soon the enemy have time to throw them back before they explode",
 		"France, Russia, Serbia, Japan, Belgium, Italy",
 		"H.M.S.Queen Elizabeth the largest ship to storm the Dardanelles", 
-		"By the Army Service Corps"]
-	]	
-	
-	[ // game 11
-		["What are the meanings of D.S.O. and D.C.M.?",
+		"By the Army Service Corps"]];
+
+games[10] = [["What are the meanings of D.S.O. and D.C.M.?",
 		"What are the regular Army rations on Active Service?",
 		"Of what importance is Verdun?",
 		"What great man warned Britain against Germany, and urged her to prepare for war?",
@@ -315,11 +295,9 @@ var games = [
 		"An agreement between England, France, and Russia to help one another",
 		"Because Russia was mobilising troops against Austria",
 		"Belgian refugees say that it took three days for the army to march past one place",
-		"In order to protect the Suez Canal"]
-	]	
+		"In order to protect the Suez Canal"]];
 	
-	[ // game 12
-		["When, and how, do the Germans make air raids?",
+games[11] =	[["When, and how, do the Germans make air raids?",
 		"How are British prisoners treated in Germany",
 		"Why do the Germans try to sink all ships going to and from England?",
 		"Of what importance is Verdun?",
@@ -344,11 +322,9 @@ var games = [
 		"The Cathedral at Rheims",
 		"Secretary of State for War from August, 1914, to June, 1916. To raise and train men for the Army",
 		"The name given to the largest ammunition factory in Germany",
-		"She sent troops to France, munitions to Russia, and kept the trade routes open"]
-	]	
+		"She sent troops to France, munitions to Russia, and kept the trade routes open"]];
 	
-	[ // game 13
-		["What are the non-commissioned officers?",
+games[12] =	[["What are the non-commissioned officers?",
 		"What was the size of the Main Expeditionary Force that left New Zealand?",
 		"Why were the Australian and New Zealanders sent to Gallipoli and who was in command of them?",
 		"How has Britain raised her army?", 
@@ -373,11 +349,9 @@ var games = [
 		"Large cast-iron cooking utensils used by the Army in the field",
 		"By a wonderfully organised system of spies working all over the British Empire",
 		"Scouts to guard against unexpected attached by the enemy",
-		"100,000 men"]
-	]	
+		"100,000 men"]];
 	
-	[ // game 14
-		["How are the needs of the soldiers supplied?",
+games[13] = [["How are the needs of the soldiers supplied?",
 		"What are prize-ships?",
 		"Has the war affected neutral countries?",
 		"What is a V.C., and when is it awarded?", 
@@ -402,11 +376,9 @@ var games = [
 		"Admirals Sir John Jellico Sir David Beatty",
 		"All buttons and badges are blackened, and officers wear uniforms similar to those of the men",
 		"The Battle of the Marne",
-		"Austria, Turkey, and Bulgaria"]
-	]	
+		"Austria, Turkey, and Bulgaria"]];
 	
-	[ // game 15
-		["Did the Germans expect Belgium to fight?",
+games[14] = [["Did the Germans expect Belgium to fight?",
 		"What are Soup Kitchens?",
 		"What is a Trench Periscope?",
 		"What is the pay of an English soldier compared with that of a Colonial?",
@@ -431,11 +403,9 @@ var games = [
 		"To guard the other men while sleeping or resting",
 		"Very badly, except in a few show camps",
 		"The Distinguished Service Order given to officers. Distinguished Conduct Medal given to men",
-		"It is a bugle call blown last thing at night and at a soldier's funeral"]
-	]	
+		"It is a bugle call blown last thing at night and at a soldier's funeral"]];
 	
-	[ // game 16
-		["What was the famous British Retreat at the beginning of the war?",
+games[15] = [["What was the famous British Retreat at the beginning of the war?",
 		"What was the average weight of a soldier's kit?",
 		"Why did England want to take Constantinople from the Turks?",
 		"What large towns have been destroyed in Belgium by the Germans?",
@@ -460,12 +430,7 @@ var games = [
 		"Belgium was a neutral country, and her neutrality was guaranteed by Germany and other Great Powers",
 		"Austria, Turkey, and Bulgaria", 
 		"No; but the four gunboats, Philomel, Pyramus, Psyche, and Torch make N.Z. their base",
-		"To carry the wounded from the Trenches to the Field Ambulance Hospital"]
-	]	
-	
-	
-	
-]
+		"To carry the wounded from the Trenches to the Field Ambulance Hospital"]];
 
 var correctCards = 0;
 var movedCards = 0;
@@ -474,30 +439,22 @@ var movedCards = 0;
  
 function gameStart(gameRef) {
 	
-	// load QandA arrays based on passed in game ref
-	questions = games[gameRef-1][0];
-	answers = games[gameRef-1][1];
+  // load QandA arrays based on passed in game ref
+  questions = games[gameRef][0];
+  answers = games[gameRef][1];
 	
-	
-  // Hide the other div's 
-  $('#game-landing').hide();
-  $('#game-picker').hide();
-  $('#game-rules').hide();
+  // Hide the other div's just in case
+  $('#game-landing').css("visibility", "hidden");
+  $("#game-picker").css("visibility", "hidden");
+  $("#game-rules").css("visibility", "hidden");
  
   // Hide the success message
-  $('#gameMessage').hide();
-  $('#gameMessage').css({
-    left: 25%,
-    top: 25%,
-    width: 50%,
-    height: 50%,
-    background-color: #000,
-  });
- 
+  $('#game-message').css("visibility", "hidden");
+   
   // Reset the game
   correctCards = 0;
-  $('#cardQuestions').html( '' );
-  $('#cardAnswers').html( '' );
+  $('#cardQuestions').empty();
+  $('#cardAnswers').empty();
  
   // Create the pile of shuffled question cards
   var qnumbers = [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ];
@@ -548,16 +505,8 @@ function gameStart(gameRef) {
 	  // to check the score and prompt for repeat game
 	 
 	  if ( movedCards == 12 ) {
-	    $('#gameMessage').show();
-	    $('#gameMessage').animate({
-	      left: '380px',
-	      top: '200px',
-	      width: '400px',
-	      height: '100px',
-	      opacity: 0.9,
-	      backgroundColor: #fff, 
-	    });
-		}	
+	    $('#game-message').show();
+	  }	
 	}
   
   // show the game

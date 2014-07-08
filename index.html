@@ -14,6 +14,8 @@
         <script src="js/vendor/modernizr-2.8.0.min.js"></script>
         <script src="js/vendor/jquery-1.11.1.min.js"></script>
         <script src="js/jquery-ui-1.10.4.min.js"></script>
+        <script src="js/idle-timer.js"></script>
+        <script src="js/game.js"></script>
         
     </head>
     <body>
@@ -33,61 +35,82 @@
                             A New, Interesting and Instructive Game for Young and Old 
                         </div>
                         <div class="button-container">
-                            <input type="button" value="Rules" class="entry-btn" />
-                            <input type="button" value="Games" id="games-rules-btn" class="entry-btn" />
+                            <input type="button" value="Rules" id="games-rules-btn" class="entry-btn" />
+                            <input type="button" value="Games" id="game-picker-btn" class="entry-btn" />
                          </div>
                   </div>
 
                   <div id="game-picker" class="game-picker">
-                        <div id="game-picker-header" class="header-title">
+                  		<div class="game-picker-container">
+                          <div id="game-picker-header" class="header-title">
                             Games		  		
-                        </div>
-                        <div id="game-picker-container" class="game-picker-container">
+                          </div>
+                          <div id="game-picker-content" class="game-picker-content">
                             <!-- content loaded via js function based on games[] js array -->
-                        </div>
-                        <div id="game-picker-menu" class="game-picker-menu">
-                            <input type="button" id="game-picker-menu-home" class="menu-btn" value="Home" onClick="showHome();">	
-                            <input type="button" id="game-picker-menu-rules" class="menu-btn" value="Rules" onClick="showRules();">	
-                        </div>
+                          </div>
+                          <div class="button-container">
+                            <input type="button" value="Rules" id="games-rules-btn" class="entry-btn" />
+                            <input type="button" value="Close" id="close-btn" class="entry-btn" />
+                          </div>
+                         </div>
                   </div>
 		  
                   <div id="game-rules" class="game-rules">
-                            <div id="game-rules-title" class="game-rules-title">
-                                Rules of the Game		  			
+                  		<div class="game-picker-container">
+                            <div id="game-rules-header" class="game-rules-header">
+                                Rules	  			
                             </div>
                             <div id="game-rules-content" class="game-rules-content">
-                            
+                            	<p>1. Each game consists of 12 Questions and Answers - The questions appear at the top of the page, and the answers appear at the bottom.
+                                <p>2. Read the questions at the top and choose the answer which you think is correct. Drag and drop your answer over the questions.
+                                <p>3. If the answer is correct, the card will turn green - if it is incorrect, you will have to try again.
+                                <p>4. Have fun! see how quickly you can complete it for an extra challenge!
+
                             </div>
-                            <div id="game-rules-menu" class="game-rules-menu">
-                                <input type="button" id="game-rules-menu-rules" class="screen-btn" value="Home" onClick="showHome();">	
-                                <input type="button" id="game-rules-menu-games" class="screen-btn" value="Games" onClick="showGames();">	  
-                            </div>
+                         <div class="button-container">
+                            <input type="button" value="Games" id="game-picker-btn" class="entry-btn" />
+                            <input type="button" value="Close" id="close-btn" class="entry-btn" />
+                         </div>
+                       </div>
                   </div>
 		  
+          
                     <div id="game-container" class="game-container">
-                        <div id="menu-container">	
-                              <div id="menu-container-top">
-                                  <input type="button" id="menu-home" class="menu-btn" value="Home" onClick="showHome();">	
-                                  <input type="button" id="menu-rules" class="menu-btn" value="Rules" onClick="showRules();">	
-                                  <input type="button" id="menu-games" class="menu-btn" value="Games" onClick="showGames();">	
-                                  <hr>
-                                  <input type="button" id="menu-reset" class="" value="Reset" onClick="resetGame();">		  		
-                              </div>
-                              <div id="menu-container-bottom">
-                                      <img src="img/li-logo.png" id="menu-li-logo" />		  		
-                                      <img src="img/sl-logo.png" id="menu-sl-logo" />
-                              </div> 
-                          </div>
-                      </div>    
-                  
-                    <div id="game-content-container">
-                            
-                          <div id="cardQuestions"></div>
-                          <div id="cardAnswers"></div>
-                          <div id="gameMessage"></div>
-                         
+                    
+                        <div id="game-content-container">
+                            <div id="menu-container">	
+                                <div id="menu-container-top">
+                                    <input type="button" id="menu-home" class="menu-btn" value="Home" onClick="showHome();">	
+                                    <input type="button" id="menu-rules" class="menu-btn" value="Rules" onClick="showRules();">	
+                                    <input type="button" id="menu-games" class="menu-btn" value="Games" onClick="showGames();">	
+                                    <hr>
+                                    <input type="button" id="menu-reset" class="" value="Reset" onClick="resetGame();">		  		
+                                </div>
+                                <div id="menu-container-bottom">
+                                  <img src="img/li-logo.png" id="menu-li-logo" />		  		
+                                  <img src="img/sl-logo.png" id="menu-sl-logo" />
+                                </div> 
+                            </div>
+                        </div>    
+                    
+                    	<div id="card-content-container" class="card-content-container">
+                            <div id="cardQuestions"></div>
+                            <div id="cardDivider">
+                                <img src="img/divider-bar_14.png" />
+                            </div>
+                            <div id="cardAnswers"></div>
+                        </div>
+                    
                     </div>
+                    
+                    <div id="game-message" class="game-message">
+                    	<div id="game-message-container">
+                    		<!-- content loaded via js from games.js -->
+                        </div>
+                    </div>
+                    
                 </div>
+                
              </div>
         
         </div>

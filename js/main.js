@@ -1,34 +1,71 @@
 // jquery time
+
+document.addEventListener("deviceready", onDeviceReady, false);
+
+function onDeviceReady(){}
+
+// idle timer function
+$( document ).idleTimer( 15*60*1000 );
+$( document ).on( "idle.idleTimer", function(){
+	$(location).attr('href', 'index.html');
+});
+
+
+
 $( document ).ready(function() {
-	
+
 	// first hide the div's we don't initially need
-	$("#game-picker").hide();
-	$("#game-rules").hide();
+	$("#game-message").css("visibility", "hidden");
+	$("#game-picker").css("visibility", "hidden");
+	$("#game-rules").css("visibility", "hidden");
 	$("#game-container").hide();
-	$("#content-container").hide();
 	
-    console.log( "ready!" );
+	// add in the selection images for the games
+	var i;
+	for (i = 0; i < games.length; ++i) {
+		img_ref = i+1;
+    	$("#game-picker-content").append("<img src='img/" + img_ref + ".png' class='game-btn' id='" + i + "' />");
+	}
+	
 });
 
 
 // click buttons
 $(document).on('click', '#games-rules-btn', function() {
+	$("#game-picker").css("visibility", "hidden");
 	$("#game-rules").css("visibility", "visible");		
 }); 
 
+$(document).on('click', '#game-picker-btn', function() {
+	$("#game-rules").css("visibility", "hidden");
+	$("#game-picker").css("visibility", "visible");		
+}); 
 
+$(document).on('click', '#close-btn', function() {
+	$("#game-picker").css("visibility", "hidden");
+	$("#game-rules").css("visibility", "hidden");	
+});
+
+$(document).on('click', '#game-btn', function() {
+	// get id of button then load game
+	var game_id = $(this).attr("id");
+	gameStart(game_id);
+});
 
 $(document).on('pageshow', '#index', function(){       
-    $("#drag").draggable({
+    
+	$("#drag").draggable({
         start: handleDragStart,
         cursor: 'move',
         revert: "valid",
         snap: '#dropzone',
     });
+	
     $("#dropzone").droppable({
         drop: handleDropEvent,
         tolerance: "touch",              
     });
+	
 });
 
 function handleDragStart (event, ui) { }
@@ -43,7 +80,7 @@ function handleDropEvent (event, ui) {
     ui.draggable.element = $(this);
 }
 
-    // This is a fix for mobile devices
+// This is a fix for mobile devices
 
 /iPad|iPhone|Android/.test( navigator.userAgent ) && (function( $ ) {
 
