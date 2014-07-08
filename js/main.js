@@ -1,4 +1,5 @@
 // jquery time
+var game_id;
 
 document.addEventListener("deviceready", onDeviceReady, false);
 
@@ -41,14 +42,38 @@ $(document).on('click', '#game-picker-btn', function() {
 	$("#game-picker").css("visibility", "visible");		
 }); 
 
+$(document).on('click', '#menu-home', function() {
+	$('#content-container').show();	
+  	$('#game-landing').css("visibility", "visible");
+  	$("#game-picker").css("visibility", "hidden");
+  	$("#game-rules").css("visibility", "hidden");
+});
+
+$(document).on('click', '#menu-rules', function() {
+	$("#game-picker").css("visibility", "hidden");
+	$("#game-rules").css("visibility", "visible");	
+});
+
+$(document).on('click', '#menu-games', function() {
+	$("#game-picker").css("visibility", "visible");
+	$("#game-rules").css("visibility", "hidden");	
+});
+
+$(document).on('click', '#menu-reset', function() {
+	gameStart(game_id);	
+});
+
 $(document).on('click', '#close-btn', function() {
 	$("#game-picker").css("visibility", "hidden");
 	$("#game-rules").css("visibility", "hidden");	
 });
 
-$(document).on('click', '#game-btn', function() {
+$(document).on('click', '.game-btn', function() {
 	// get id of button then load game
-	var game_id = $(this).attr("id");
+	game_id = $(this).attr("id");
+	
+	console.log('Loading game ... ' + game_id);
+	
 	gameStart(game_id);
 });
 
