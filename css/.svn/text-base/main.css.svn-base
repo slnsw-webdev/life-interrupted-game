@@ -1,0 +1,651 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+	font-family: Arial, Helvetica, sans-serif;
+	overflow:hidden;
+}
+
+body {
+	background: url(../img/background2.jpg) repeat;	
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* css class for draggable */
+#drag { 
+	/* styling if needed */
+}
+
+#drag:active { 
+	border: 1px solid #fff;
+}
+
+.game-landing, .game-rules, .game-picker, #game-container {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.game-landing-title, game-rules-title {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size: 48px;
+	color:  #0059be;
+	font-weight: bold;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+#game-picker-header, #game-rules-header {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size: 36px;
+	color:  #0059be;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 20px;	
+}
+
+.ui-droppable {
+	text-align: center;
+}
+
+.inner-content {
+	display: inline-block;
+    position: relative;
+	margin: 3px;
+	margin-top: 5px;
+}
+
+.game-landing-content {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	color:  #888;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.game-rules, .game-picker, #game-message {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background: rgba(0,0,0,0.65);
+	z-index: 1000;
+}
+
+.game-rules-container, #game-message-container {
+	position: relative;
+	left: 25%;
+	top: 10%;
+    width: 50%;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	padding: 10px 10px 10px 10px;
+	margin: 0px 5px 20px 20px;
+	background: rgba(255,255,255,0.95);
+	/* color:#BABEC2; */
+	font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+	-webkit-box-shadow: rgba(0,0,0,0.85) 5px 5px 20px;
+	-moz-box-shadow: rgba(0,0,0,0.85) 5px 5px 20px;
+	box-shadow: rgba(0,0,0,0.85) 5px 5px 20px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	z-index: 1001;
+}
+
+.game-picker-container {
+	position: relative;
+	left: 15%;
+	top: 5%;
+    width: 70%;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	padding: 10px 10px 10px 10px;
+	margin: 0px 5px 20px 20px;
+	background: rgba(255,255,255,0.95);
+	/* color:#BABEC2; */
+	font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+	-webkit-box-shadow: rgba(0,0,0,0.85) 5px 5px 20px;
+	-moz-box-shadow: rgba(0,0,0,0.85) 5px 5px 20px;
+	box-shadow: rgba(0,0,0,0.85) 5px 5px 20px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	z-index: 1001;
+}
+
+.game-btn {
+	z-index: 1002;	
+}
+
+.game-picker-container img {
+	margin: 15px;	
+}
+
+#card-content-container {
+	width: 82%;
+	min-height: 100%;
+	background-color: #000;
+	text-align: center;	
+	vertical-align: center;	
+	float: left;
+}
+
+#cardQuestions {
+	height: 48%;
+	vertical-align: middle;	
+}
+
+#cardAnswers {
+	height: 48%;
+	vertical-align: middle;
+	margin-left: 3px;	
+}
+
+.card-replace {
+	background-image: url(../img/card-back.png);
+}
+
+#cardDivider {
+	height: 6%;
+	vertical-align: middle;
+}
+
+#cardQuestions div {
+	background-color: #03F;
+	border: 2px solid #fff;
+	color: #fff;
+	width: 200px;
+	height: 110px;	
+	margin: 2px;
+	float: left;
+	font-size: 13px;	
+}
+
+#cardAnswers div {
+	background-color: #fff;
+	border: 2px solid #03F;
+	color: #333;
+	width: 200px;
+	height: 110px;
+	margin: 2px;
+	float: left;
+	font-size: 13px;		
+}
+
+#cardAnswers div.ui-draggable-dragging {
+  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+}
+
+.hovered {
+	background: #CCC;	
+}
+
+#game-content-container {
+	width: 18%;
+	min-height: 100% !important;
+	background-color: #fff;
+	text-align: center;
+	float: left;	
+}
+
+#game-content-container img {
+	width: 120px;
+	height: auto;
+}
+
+#menu-container {
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+
+.game-rules-content p {
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	text-align: left;
+}
+
+#menu-container-top {
+	width: 100%;
+	height: 66% !important;
+	padding: 0;
+	margin-left: 0 auto;
+	margin-right: 0 auto;
+	text-align: center;
+	vertical-align: top;
+	float: left;
+}
+
+#menu-container-bottom {
+	width: 100%;
+	height: 34% !important;
+	text-align: center;
+	vertical-align: bottom;
+	float: left;
+}
+
+#content-container {
+  width: 85%;
+  float: right;
+  text-align: center;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#container {
+	width: 100%;
+	height: 100% !important;
+	background-repeat: repeat;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;	
+}
+
+#main {
+	width: 100%;
+	height: 100%;
+}
+
+#header {
+	background-color: #000;
+	height: 86px;
+	margin: 0px;
+	padding: 0px;
+	display: table;	
+	width: 100%;
+	position: fixed;
+}
+
+
+#titlecontainer {
+	display: table-cell;
+	width: 40%;	
+	height: 86px;
+}
+
+#title {
+	float: left;
+	color: #fff;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 27px;
+	font-weight: 400;
+	padding-left: 4%;
+	padding-top: 20px;
+	vertical-align: middle;	
+	height: 66px;
+}
+
+.container-center {
+	width: 80%;
+	min-height: 100%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 2%;
+	text-align: center;
+	margin-top: 60px;	
+}
+
+.container-center .image-container {
+	width: 100%;
+	margin-top: 50px;
+}
+
+.container-center .image-container img {
+	width: 250px;
+	height: auto;	
+}
+
+.container-center .button-container {
+	width: 100%;
+}
+
+.column-container {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.column-content {
+	margin-top: 100px;
+	width: 96%;
+	margin-left: 2%;
+	margin-right: 2%;	
+}
+
+.column-cell {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 4px;
+	background-color: #FFF;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.23);
+	width: 100%;
+	min-height: 120px;	
+}
+
+.column-cell-selected {
+	background-color: #CCC !important;
+}
+
+.column-cell-image-container {
+	float: left;
+	padding: 0;
+	margin: 0;
+	width: 100px;
+	heigth: 100px;
+}
+
+.column-cell-image-container img {
+	width: 100px;
+	heigth: 100px;
+}
+
+.column-cell-content-container {
+	float: left;
+	padding: 5px;
+	margin-left: 10px;
+	font-family: Arial;
+	font-size: 12px;
+	max-width: 80%;
+}
+
+.column-cell-control-container {
+	float: right;
+	width: 350px;
+}
+
+.entry-btn {
+	background-color: #ededed;
+	border: 1px solid #dcdcdc;
+	display: inline-block;
+	color: #777777;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:57px;
+	width:200px;
+	text-decoration: none;
+	text-align: center;
+	margin-right: 8px;
+	margin-top: 5%;	
+	margin-bottom: 5%;	
+}
+
+.entry-btn:hover {
+	background-color:#00cc99;
+	color: #ffffff;	
+}
+
+.menu-btn {
+	background-color: #00cc99;
+	border: 1px solid #00cc99;
+	display: inline-block;
+	color: #fff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:57px;
+	width:140px;
+	text-decoration: none;
+	text-align: center;
+	margin-right: 8px;
+	margin-top: 8%;	
+	margin-bottom: 8%;	
+}
+
+.menu-btn:hover {
+	background-color:#fff;
+	color: #777;	
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

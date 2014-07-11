@@ -90,11 +90,10 @@
                                 Rules	  			
                             </div>
                             <div id="game-rules-content" class="game-rules-content">
-                            	<p>1. Each game consists of 12 Questions and Answers - The questions appear at the top of the page, and the answers appear at the bottom.</p>
-                                <p>2. Read the questions at the top and choose the answer which you think is correct. Drag and drop your answer card over to the corresponding question card.</p>
-                                <p>3. If you make a mistake or change your mind, press the Reset button to start the game again</p>
-                                <p>4. After you drag and drop the last card, your score will be revealed.</p>
-                                <p>5. Have fun! see how quickly you can complete it for an extra challenge!</p>
+                            	<p>1. Each game consists of 12 Questions and Answers - The questions appear at the top of the page, and the answers appear at the bottom.
+                                <p>2. Read the questions at the top and choose the answer which you think is correct. Drag and drop your answer over the questions.
+                                <p>3. If the answer is correct, the card will turn green - if it is incorrect, you will have to try again.
+                                <p>4. Have fun! see how quickly you can complete it for an extra challenge!
 
                             </div>
                          <div class="button-container">
