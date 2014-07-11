@@ -453,8 +453,8 @@ function gameStart(gameRef) {
   questions = games[gameRef][0];
   answers = games[gameRef][1];
 
-  console.log('Total questions ... ' + questions.length);
-  console.log('Total answers ... ' + answers.length);
+  // console.log('Total questions ... ' + questions.length);
+  // console.log('Total answers ... ' + answers.length);
 
   // Hide the other div's just in case
   $('#content-container').hide();
@@ -516,13 +516,13 @@ function gameStart(gameRef) {
 	   $(this).droppable( 'disable' );
 	   ui.draggable.position( { of: $(this), my: 'left top', at: 'left top' } );
 	   ui.draggable.draggable( 'option', 'revert', false );
-	   ui.draggable.draggable( 'destroy' );
+	   ui.draggable.draggable( 'disable' );
 	 
 	  if ( questionNumber == answerNumber ) {
 	    correctCards++;
 	  } 
 	  
-	  console.log('correct cards are ... ' + correctCards + ' after ' + movedCards + ' moved cards' );
+	  // console.log('correct cards are ... ' + correctCards + ' after ' + movedCards + ' moved cards' );
 	   
 	  // If all the cards have been placed then display a message
 	  // to check the score and prompt for repeat game
